@@ -5,16 +5,18 @@ import { shoppingCartUrl } from '../config.js';
 const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
 
 const imgProfile = '/images/profile/profile.webp';
+const logo = '/images/logo/hl.webp';
 
 const menuItems = [
     { name: "Inicio", href: "/" },
-    { name: "Productos", href: "/#productos" },
     { name: "Tienda", href: shoppingCartUrl, external: true },
 ]
 ---
 <header class="w-full sticky top-0 z-50 bg-neutral-900/80 p-4 backdrop-blur-sm border-b border-neutral-800">
     <nav class="flex justify-between items-center max-w-6xl mx-auto">
-        <a href="/" class="font-semibold text-lg">Happy Live</a>
+        <a href="/" class="font-semibold text-lg">
+            <img src={logo} alt="Happy Live Logo" class="h-8">  
+        </a>
         <div class="flex gap-4 items-center">
             <ul class="flex items-center">
                 <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
