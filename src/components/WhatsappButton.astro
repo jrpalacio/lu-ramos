@@ -1,8 +1,7 @@
 ---
 import WhatsApp from '../assets/svg/whatsapp.svg'
-import { whatsappNumber } from '../config.js';
-const phone = whatsappNumber;
-const message = '¡Hola! Me gustaría probar los productos de Happy Live. ¿Podrías brindarme más información?'
+import { whatsapp } from '../config.js';
+const { phone, message } = whatsapp;
 const whatsappLink = `https://wa.me/521${phone}?text=${encodeURIComponent(message)}`
 ---
 
