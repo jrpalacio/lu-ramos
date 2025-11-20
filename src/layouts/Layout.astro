@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navbar from '../components/Navbar.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -11,15 +12,19 @@ import "../styles/global.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Navbar />
 		<slot />
+		<footer class="max-w-6xl m-auto">
+			<p>&copy; 2025 - jrpalacio</p>
+		</footer>
 	</body>
 </html>
 
 <style>
-	html,
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		font-family: system-ui, sans-serif;
+		background-color: #161a19;
+		color: #ffffff;
 	}
 </style>
