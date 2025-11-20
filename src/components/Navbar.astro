@@ -1,13 +1,19 @@
 ---
-import { Menu, Store } from '@lucide/astro';  
+import { Menu, X, Store } from '@lucide/astro';  
 import Tiktok from '../assets/svg/tiktok.svg'
 import { shoppingCartUrl } from '../config.js';
 const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
+
+const menuItems = [
+    { name: "Inicio", href: "/" },
+    { name: "Productos", href: "/#productos" },
+    { name: "Tienda", href: shoppingCartUrl, external: true },
+]
 ---
 <header class="w-full sticky top-0 z-50 bg-neutral-900/80 p-4 backdrop-blur-sm border-b border-neutral-800">
     <nav class="flex justify-between items-center max-w-6xl mx-auto">
-        <a href="/">Happy Live</a>
-        <div class="flex gap-4">
+        <a href="/" class="font-semibold text-lg">Happy Live</a>
+        <div class="flex gap-4 items-center">
             <ul class="flex items-center">
                 <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
                     <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
@@ -20,10 +26,67 @@ const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
                     </a>
                 </li>
             </ul>
-            <button class="flex gap-2 items-center hover:bg-neutral-700 p-2 rounded-xl">
-                <Menu size="20"/>
-                <span>Menu</span>
+            <button id="menu-button" class="flex gap-2 items-center hover:bg-neutral-700 p-2 rounded-xl transition-colors">
+                <Menu id="menu-icon" size="20"/>
+                <X id="close-icon" size="20" class="hidden"/>
+                <span id="menu-text">Menú</span>
             </button>
         </div>
     </nav>
 </header>
+<!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 top-[73px] bg-neutral-900 backdrop-blur-md z-500">
+        <div class="flex flex-col items-center justify-center h-full">
+            <ul class="flex flex-col gap-6 text-center">
+                {menuItems.map((item) => (
+                    <li>
+                        <a 
+                            href={item.href} 
+                            class="menu-link text-2xl font-medium hover:text-green-400 transition-colors block py-2"
+                            target={item.external ? "_blank" : undefined}
+                            rel={item.external ? "noopener noreferrer" : undefined}
+                        >
+                            {item.name}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const menuText = document.getElementById('menu-text');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    function toggleMenu() {
+        const isHidden = mobileMenu?.classList.contains('hidden');
+        
+        if (isHidden) {
+            mobileMenu?.classList.remove('hidden');
+            menuIcon?.classList.add('hidden');
+            closeIcon?.classList.remove('hidden');
+            if (menuText) menuText.textContent = 'Cerrar';
+        } else {
+            mobileMenu?.classList.add('hidden');
+            menuIcon?.classList.remove('hidden');
+            closeIcon?.classList.add('hidden');
+            if (menuText) menuText.textContent = 'Menú';
+        }
+    }
+
+    // Toggle menu on button click
+    menuButton?.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking on any link
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu?.classList.add('hidden');
+            menuIcon?.classList.remove('hidden');
+            closeIcon?.classList.add('hidden');
+            if (menuText) menuText.textContent = 'Menú';
+        });
+    });
+</script>
