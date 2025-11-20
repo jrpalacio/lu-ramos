@@ -1,0 +1,29 @@
+---
+import { Menu, Store } from '@lucide/astro';  
+import Tiktok from '../assets/svg/tiktok.svg'
+import { shoppingCartUrl } from '../config.js';
+const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
+---
+<header class="w-full sticky top-0 z-50 bg-neutral-900/80 p-4 backdrop-blur-sm border-b border-neutral-800">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto">
+        <a href="/">Happy Live</a>
+        <div class="flex gap-4">
+            <ul class="flex items-center">
+                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+                    <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
+                        <Tiktok class="size-6"/>
+                    </a>
+                </li>
+                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+                    <a href={shoppingCartUrl} target="_blank" rel="noopener noreferrer">
+                        <Store class="size-6" stroke-width="2"/>
+                    </a>
+                </li>
+            </ul>
+            <button class="flex gap-2 items-center hover:bg-neutral-700 p-2 rounded-xl">
+                <Menu size="20"/>
+                <span>Menu</span>
+            </button>
+        </div>
+    </nav>
+</header>
