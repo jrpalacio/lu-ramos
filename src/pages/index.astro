@@ -4,9 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { shoppingCartUrl } from '../config.js';
 import WhatsappButton from '../components/WhatsappButton.astro';
-// import type { CollectionEntry } from 'astro:content';
 
-// const productos: CollectionEntry<'productos'>[] = await getCollection('productos');
 const productos = await getCollection('productos');
 ---
 
