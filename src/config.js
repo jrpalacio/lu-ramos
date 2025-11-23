@@ -4,3 +4,5 @@ export const whatsapp = {
     phone: "7223031842",
     message: "¡Hola Lucy! Me gustaría probar los productos de Happy Live. ¿Podrías brindarme más información?"
 }
+
+export const facebookUrl = 'https://www.facebook.com/profile.php?id=100072302242525'
