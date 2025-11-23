@@ -1,14 +1,15 @@
 ---
-import { Menu, X, Store } from '@lucide/astro';  
+import { Menu, X, Store, Facebook } from '@lucide/astro';  
 import Tiktok from '../assets/svg/tiktok.svg'
-import { shoppingCartUrl } from '../config.js';
+import { shoppingCartUrl, facebookUrl } from '../config.js';
 const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
 
 const imgProfile = '/images/profile/profile.webp';
 const logo = '/images/logo/hl.webp';
 
 const menuItems = [
-    { name: "Inicio", href: "/" },
+    { name: "Facebook", href: "/" },
+    { name: "Tiktok", href: "/" },
     { name: "Tienda", href: shoppingCartUrl, external: true },
 ]
 ---
@@ -18,7 +19,12 @@ const menuItems = [
             <img src={logo} alt="Happy Live Logo" class="h-8">  
         </a>
         <div class="flex gap-4 items-center">
-            <ul class="flex items-center">
+            <ul id="social-links" class="flex items-center">
+                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+                    <a href={facebookUrl} target="_blank" rel="noopener noreferrer" class="hover:bg-neutral-600 hover:rounded-xl p-2">
+                        <Facebook class="size-6" stroke-width="2"/>
+                    </a>
+                </li>
                 <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
                     <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
                         <Tiktok class="size-6"/>
@@ -41,8 +47,14 @@ const menuItems = [
 <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 top-[73px] bg-neutral-900 backdrop-blur-md z-500">
         <div class="flex flex-col items-center justify-center h-full">
-            <img src={imgProfile} alt="perfil de usuario" class="size-40 rounded-full absolute top-8">
-            <ul class="flex flex-col gap-6 text-center">
+            <header class="absolute top-8 flex flex-col items-center">
+                <img src={imgProfile} alt="perfil de usuario" class="size-40 rounded-full">
+                <div class="text-center mt-4 text-white">
+                    <h2 class="text-xl">Luscy Ramos</h2>
+                    <p class="text-shadow-teal-700">Pionera en la industria del <strong>CBD</strong></p>
+                </div>
+            </header>
+            <ul class="flex flex-col gap-4 text-center">
                 {menuItems.map((item) => (
                     <li>
                         <a 
@@ -65,6 +77,7 @@ const menuItems = [
     const closeIcon = document.getElementById('close-icon');
     const menuText = document.getElementById('menu-text');
     const menuLinks = document.querySelectorAll('.menu-link');
+    const socialLinks = document.getElementById('social-links');
 
     function toggleMenu() {
         const isHidden = mobileMenu?.classList.contains('hidden');
@@ -73,11 +86,13 @@ const menuItems = [
             mobileMenu?.classList.remove('hidden');
             menuIcon?.classList.add('hidden');
             closeIcon?.classList.remove('hidden');
+            socialLinks?.classList.add('hidden');
             if (menuText) menuText.textContent = 'Cerrar';
         } else {
             mobileMenu?.classList.add('hidden');
             menuIcon?.classList.remove('hidden');
             closeIcon?.classList.add('hidden');
+            socialLinks?.classList.remove('hidden');
             if (menuText) menuText.textContent = 'Menú';
         }
     }
