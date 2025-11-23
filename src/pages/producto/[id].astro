@@ -1,0 +1,96 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import ArrowLeft from '../../assets/svg/arrowl.svg';
+import Section from '../../components/Section.astro';
+import { testimonios } from '../../data/testimonios';
+import Testimonials from '../../components/Testimonials.astro';
+import { shoppingCartUrl } from '../../config.js';
+
+export async function getStaticPaths() {
+  const productos = await getCollection('productos');
+  return productos.map(producto => ({
+    params: { id: producto.id },
+    props: { producto }
+  }));
+}
+
+const { producto } = Astro.props;
+const { data } = producto;
+const { precio_publico, img, nombre, description, ingredientes } = data;
+
+const { Content } = await render(producto);
+
+const testimonio = testimonios.filter(testimonials => testimonials.producto.toLowerCase() === nombre.toLowerCase());
+--- 
+
+<Layout>
+  <Section>
+    <header class="flex justify-between items-center py-6">
+      <h2 class="leading-snug text-white">
+       <a href="/" class="flex items-center gap-2 "><ArrowLeft /> <span class="ml-2 font-bold text-2xl">{nombre}</span></a>
+      </h2>
+      <p class="bg-amber-400 font-semibold text-[rgb(23,23,23)] rounded-3xl py-1 px-2">${precio_publico}.00</p>
+    </header>
+
+    <div>
+      <div class="flex flex-col items-center">
+        <Image 
+          src={img} 
+          alt={nombre} 
+          class="object-contain w-[264px] rounded-2xl shadow-lg"
+          
+          width={264}
+          height={264}
+          loading="lazy"
+          decoding="async"
+          />
+        <!-- llamada a la acción de comprar -->
+          
+        <a 
+        href={shoppingCartUrl}
+        target="_blank"
+        class="mt-4 text-lg font-bold rounded-full border border-[#ff7d00] bg-[#ff7d00] px-6 py-2 text-[#282828]"
+        >
+        Comprar en Happy Live
+        </a>
+        <div class="mt-8">
+          <p class="text-lg text-gray-300 text-pretty">{description}</p>
+          <h3 class="text-2xl font-extrabold text-gray-300 mt-9 mb-6">💚 ¿Qué contiene?</h3>
+          <ul>
+            {ingredientes.map(ingrediente => (
+              <li class="text-lg text-gray-300 mt-2">• {ingrediente}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+
+      <article class="prose prose-invert text-lg mt-8" >
+        <Content />
+      </article>
+
+      
+    </div>
+
+      {/* si hay mas de un elemento, mostrarlos todos  */}
+      { 
+        testimonio.length >= 1 && (  
+        <h2 class="text-2xl font-bold text-gray-100 mt-12 mb-6"> 💬 Lo que dicen quienes lo prueban </h2>
+          <div class="flex items-center overflow-x-scroll gap-4 py-4 px-2 sm:px-4 scrollbar-thin scrollbar-thumb-happy-pink scrollbar-track-gray-700/50 rounded">
+            {testimonio.map((testimonio) => {
+              return (
+                <Testimonials testimonio={testimonio} />
+              )
+            })}
+          </div>
+        )
+      }
+    
+  </Section>
+</Layout>
+
+<style>
+    
+</style>
