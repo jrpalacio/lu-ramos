@@ -45,31 +45,37 @@ const menuItems = [
     </nav>
 </header>
 <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed inset-0 top-[73px] bg-neutral-900 backdrop-blur-md z-500">
-        <div class="flex flex-col items-center justify-center h-full">
-            <header class="absolute top-8 flex flex-col items-center">
-                <img src={imgProfile} alt="perfil de usuario" class="size-40 rounded-full">
-                <div class="text-center mt-4 text-white">
-                    <h2 class="text-xl">Luscy Ramos</h2>
-                    <p class="text-shadow-teal-700">Pionera en la industria del <strong>CBD</strong></p>
-                </div>
-            </header>
-            <ul class="flex flex-col gap-4 text-center">
-                {menuItems.map((item) => (
-                    <li>
-                        <a 
-                            href={item.href} 
-                            class="menu-link text-2xl font-medium hover:text-green-400 transition-colors block py-2"
-                            target={item.external ? "_blank" : undefined}
-                            rel={item.external ? "noopener noreferrer" : undefined}
-                        >
-                            {item.name}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </div>
+<div id="mobile-menu" class="hidden fixed inset-0 top-[73px] bg-neutral-900 backdrop-blur-md z-500">
+    <div class="menu--full h-full">
+        <header class="flex flex-col items-center p-4">
+            <img src={imgProfile} alt="perfil de usuario" class="size-40 rounded-full">
+            <div class="text-center mt-4 ">
+                <h2 class="text-xl">Lucy Ramos</h2>
+                <p>Pionera en la industria del <strong>CBD</strong></p>
+            </div>
+        </header>
+        <ul class="flex flex-col items-center justify-center gap-4 text-center">
+            {menuItems.map((item) => (
+                <li>
+                    <a 
+                        href={item.href} 
+                        class="menu-link text-2xl font-medium hover:text-green-400 transition-colors block py-2"
+                        target={item.external ? "_blank" : undefined}
+                        rel={item.external ? "noopener noreferrer" : undefined}
+                    >
+                        {item.name}
+                    </a>
+                </li>
+            ))}
+        </ul>
     </div>
+</div>
+<style>
+    .menu--full {
+        display: grid;
+        grid-template-rows: auto 1fr ;
+    }
+</style>
 <script>
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
