@@ -1,15 +1,16 @@
 ---
 import { Menu, X, Store, Facebook } from '@lucide/astro';  
 import Tiktok from '../assets/svg/tiktok.svg'
-import { shoppingCartUrl, facebookUrl } from '../config.js';
-const tiktokLink = "https://www.tiktok.com/@_ramos.lu"
+import { shoppingCartUrl, social } from '../config.js';
+
+const { facebookUrl, tiktokUrl } = social;
 
 const imgProfile = '/images/profile/profile.webp';
 const logo = '/images/logo/hl.webp';
 
 const menuItems = [
-    { name: "Facebook", href: "/" },
-    { name: "Tiktok", href: "/" },
+    { name: "Facebook", href: facebookUrl, external: true },
+    { name: "Tiktok", href: tiktokUrl, external: true },
     { name: "Tienda", href: shoppingCartUrl, external: true },
 ]
 ---
@@ -26,7 +27,7 @@ const menuItems = [
                     </a>
                 </li>
                 <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
-                    <a href={tiktokLink} target="_blank" rel="noopener noreferrer">
+                    <a href={tiktokUrl} target="_blank" rel="noopener noreferrer">
                         <Tiktok class="size-6"/>
                     </a>
                 </li>
