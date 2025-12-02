@@ -26,55 +26,61 @@ const testimonio = testimonios.filter(testimonials => testimonials.producto.toLo
 --- 
 
 <Layout>
-  <Section>
-    <header class="flex justify-between items-center py-6">
-      <h2 class="leading-snug text-white">
-       <a href="/" class="flex items-center gap-2 "><ArrowLeft /> <span class="ml-2 font-bold text-2xl">{nombre}</span></a>
-      </h2>
-      <p class="bg-amber-400 font-semibold text-[rgb(23,23,23)] rounded-3xl py-1 px-2">${precio_publico}.00</p>
+  <section class="p-4 mx-auto max-w-4xl">
+    <header >
+      <a href="/" class="flex items-center gap-2 hover:underline">
+        <ArrowLeft class="size-4"/>
+        <span>Todos los productos</span>
+      </a>
     </header>
-
-    <div>
-      <div class="flex flex-col items-center">
-        <Image 
-          src={img} 
-          alt={nombre} 
-          class="object-contain w-[264px] rounded-2xl shadow-lg"
-          
-          width={264}
-          height={264}
-          loading="lazy"
-          decoding="async"
-          />
-        <!-- llamada a la acción de comprar -->
-          
-        <a 
-        href={shoppingCartUrl}
-        target="_blank"
-        class="mt-4 text-lg font-bold rounded-full border border-[#ff7d00] bg-[#ff7d00] px-6 py-2 text-[#282828]"
-        >
-        Comprar en Happy Live
-        </a>
-        <div class="mt-8">
-          <p class="text-lg text-gray-300 text-pretty">{description}</p>
-          <h3 class="text-2xl font-extrabold text-gray-300 mt-9 mb-6">💚 ¿Qué contiene?</h3>
-          <ul>
-            {ingredientes.map(ingrediente => (
-              <li class="text-lg text-gray-300 mt-2">• {ingrediente}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-
-      <article class="prose prose-invert text-lg mt-8" >
-        <Content />
-      </article>
-
-      
+    
+    <div class="flex justify-center my-4">
+      <Image 
+      src={img} 
+      alt={nombre} 
+      class="object-contain rounded-2xl"
+      width={264}
+      height={264}
+      loading="lazy"
+      decoding="async"
+      />
     </div>
 
-      {/* si hay mas de un elemento, mostrarlos todos  */}
+    <article class="flex flex-col gap-6">
+      <div class="flex justify-between items-center">
+        <h2 class="text-3xl font-extralight">{nombre}</h2>
+        <p>${precio_publico}.00</p>
+      </div>
+
+      <p class="text-pretty font-light ">{description}</p>
+      <a 
+        href={shoppingCartUrl}
+        target="_blank"
+        class="w-full text-lg  bg-[#ff7d00] px-6 py-2 text-[#282828] rounded-full font-semibold text-center hover:bg-[#e76c00] transition-colors"
+        >
+        Comprar en Happy Live
+      </a>
+    </article>
+
+    <article class="mt-8">
+      <h3 class="text-3xl font-extralight mb-6" >¿Qué contiene?</h3>
+        <ul class="flex flex-col gap-2">
+          {ingredientes.map(ingrediente => (
+            <li>{ingrediente}</li> 
+          ))}
+        </ul>
+    </article>
+
+    <article v-if="data.beneficios" class="mt-8">
+      <h3 class="text-3xl font-extralight mb-6">
+          💡 Beneficios que sentirás
+        </h3>
+        <ul class="flex flex-col gap-2 text-gray-300">
+          {data.beneficios.map(beneficio => (
+            <li class="border border-gray-300 rounded-2xl p-4">{beneficio}</li>
+          ))}
+        </ul>
+    </article>
       { 
         testimonio.length >= 1 && (  
         <h2 class="text-2xl font-bold text-gray-100 mt-12 mb-6"> 💬 Lo que dicen quienes lo prueban </h2>
@@ -88,7 +94,7 @@ const testimonio = testimonios.filter(testimonials => testimonials.producto.toLo
         )
       }
     
-  </Section>
+  </section>
 </Layout>
 
 <style>
