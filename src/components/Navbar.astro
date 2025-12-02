@@ -1,119 +1,140 @@
 ---
-import { Menu, X, Store, Facebook } from '@lucide/astro';  
-import Tiktok from '../assets/svg/tiktok.svg'
-import { shoppingCartUrl, social } from '../config.js';
+import { Menu, X, Store, Facebook } from "@lucide/astro";
+import Tiktok from "../assets/svg/tiktok.svg";
+import { shoppingCartUrl, social } from "../config.js";
 
 const { facebookUrl, tiktokUrl } = social;
 
-const imgProfile = '/images/profile/profile.webp';
-const logo = '/images/logo/hl.webp';
+const imgProfile = "/images/profile/profile.webp";
+const logo = "/images/logo/hl.webp";
 
 const menuItems = [
-    { name: "Facebook", href: facebookUrl, external: true },
-    { name: "Tiktok", href: tiktokUrl, external: true },
-    { name: "Tienda", href: shoppingCartUrl, external: true },
-]
+  { name: "Facebook", href: facebookUrl, external: true },
+  { name: "Tiktok", href: tiktokUrl, external: true },
+  { name: "Tienda", href: shoppingCartUrl, external: true },
+];
 ---
-<header class="w-full sticky top-0 z-50 bg-neutral-900/80 p-4 backdrop-blur-sm border-b border-neutral-800">
-    <nav class="flex justify-between items-center max-w-6xl mx-auto">
-        <a href="/" class="font-semibold text-lg">
-            <img src={logo} alt="Happy Live Logo" class="h-8">  
-        </a>
-        <div class="flex gap-4 items-center h-8"> <!-- Maintain height of the navbar -->
-            <ul id="social-links" class="flex items-center">
-                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
-                    <a href={facebookUrl} target="_blank" rel="noopener noreferrer" class="hover:bg-neutral-600 hover:rounded-xl p-2">
-                        <Facebook class="size-6" stroke-width="2"/>
-                    </a>
-                </li>
-                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
-                    <a href={tiktokUrl} target="_blank" rel="noopener noreferrer">
-                        <Tiktok class="size-6"/>
-                    </a>
-                </li>
-                <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
-                    <a href={shoppingCartUrl} target="_blank" rel="noopener noreferrer">
-                        <Store class="size-6" stroke-width="2"/>
-                    </a>
-                </li>
-            </ul>
-            <button id="menu-button" class="flex gap-2 items-center hover:bg-neutral-700 p-2 rounded-xl transition-colors">
-                <Menu id="menu-icon" size="20"/>
-                <X id="close-icon" size="20" class="hidden"/>
-                <span id="menu-text">Menú</span>
-            </button>
-        </div>
-    </nav>
+
+<header
+  class="w-full sticky top-0 z-50 bg-neutral-900/80 p-4 backdrop-blur-sm border-b border-neutral-800"
+>
+  <nav class="flex justify-between items-center max-w-4xl mx-auto">
+    <a href="/" class="font-semibold text-lg">
+      <img src={logo} alt="Happy Live Logo" class="h-8" />
+    </a>
+    <div class="flex gap-4 items-center h-8">
+      <!-- Maintain height of the navbar -->
+      <ul id="social-links" class="flex items-center">
+        <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+          <a
+            href={facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:bg-neutral-600 hover:rounded-xl p-2"
+          >
+            <Facebook class="size-6" stroke-width="2" />
+          </a>
+        </li>
+        <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+          <a href={tiktokUrl} target="_blank" rel="noopener noreferrer">
+            <Tiktok class="size-6" />
+          </a>
+        </li>
+        <li class="hover:bg-neutral-600 hover:rounded-xl p-2">
+          <a href={shoppingCartUrl} target="_blank" rel="noopener noreferrer">
+            <Store class="size-6" stroke-width="2" />
+          </a>
+        </li>
+      </ul>
+      <button
+        id="menu-button"
+        class="flex gap-2 items-center hover:bg-neutral-700 p-2 rounded-xl transition-colors"
+      >
+        <Menu id="menu-icon" size="20" />
+        <X id="close-icon" size="20" class="hidden" />
+        <span id="menu-text">Menú</span>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed inset-0 top-[65px] bg-neutral-900 backdrop-blur-md z-500">
-    <div class="menu--full h-full">
-        <header class="flex flex-col items-center p-4">
-            <img src={imgProfile} alt="perfil de usuario" class="size-40 rounded-full">
-            <div class="text-center mt-4 ">
-                <h2 class="text-xl">Lucy Ramos</h2>
-                <p>Pionera en la industria del <strong>CBD</strong></p>
-            </div>
-        </header>
-        <ul class="flex flex-col items-center justify-center gap-4 text-center">
-            {menuItems.map((item) => (
-                <li>
-                    <a 
-                        href={item.href} 
-                        class="menu-link text-2xl font-medium hover:text-green-400 transition-colors block py-2"
-                        target={item.external ? "_blank" : undefined}
-                        rel={item.external ? "noopener noreferrer" : undefined}
-                    >
-                        {item.name}
-                    </a>
-                </li>
-            ))}
-        </ul>
-    </div>
+<div
+  id="mobile-menu"
+  class="hidden fixed inset-0 top-[65px] bg-neutral-900 backdrop-blur-md z-500"
+>
+  <div class="menu--full h-full">
+    <header class="flex flex-col items-center p-4">
+      <img
+        src={imgProfile}
+        alt="perfil de usuario"
+        class="size-40 rounded-full"
+      />
+      <div class="text-center mt-4">
+        <h2 class="text-xl">Lucy Ramos</h2>
+        <p>Pionera en la industria del <strong>CBD</strong></p>
+      </div>
+    </header>
+    <ul class="flex flex-col items-center justify-center gap-4 text-center">
+      {
+        menuItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="menu-link text-2xl font-medium hover:text-green-400 transition-colors block py-2"
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+            >
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>
 <style>
-    .menu--full {
-        display: grid;
-        grid-template-rows: auto 1fr ;
-    }
+  .menu--full {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
 </style>
 <script>
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
-    const menuText = document.getElementById('menu-text');
-    const menuLinks = document.querySelectorAll('.menu-link');
-    const socialLinks = document.getElementById('social-links');
+  const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+  const menuText = document.getElementById("menu-text");
+  const menuLinks = document.querySelectorAll(".menu-link");
+  const socialLinks = document.getElementById("social-links");
 
-    function toggleMenu() {
-        const isHidden = mobileMenu?.classList.contains('hidden');
-        
-        if (isHidden) {
-            mobileMenu?.classList.remove('hidden');
-            menuIcon?.classList.add('hidden');
-            closeIcon?.classList.remove('hidden');
-            socialLinks?.classList.add('hidden');
-            if (menuText) menuText.textContent = 'Cerrar';
-        } else {
-            mobileMenu?.classList.add('hidden');
-            menuIcon?.classList.remove('hidden');
-            closeIcon?.classList.add('hidden');
-            socialLinks?.classList.remove('hidden');
-            if (menuText) menuText.textContent = 'Menú';
-        }
+  function toggleMenu() {
+    const isHidden = mobileMenu?.classList.contains("hidden");
+
+    if (isHidden) {
+      mobileMenu?.classList.remove("hidden");
+      menuIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("hidden");
+      socialLinks?.classList.add("hidden");
+      if (menuText) menuText.textContent = "Cerrar";
+    } else {
+      mobileMenu?.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+      socialLinks?.classList.remove("hidden");
+      if (menuText) menuText.textContent = "Menú";
     }
+  }
 
-    // Toggle menu on button click
-    menuButton?.addEventListener('click', toggleMenu);
+  // Toggle menu on button click
+  menuButton?.addEventListener("click", toggleMenu);
 
-    // Close menu when clicking on any link
-    menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu?.classList.add('hidden');
-            menuIcon?.classList.remove('hidden');
-            closeIcon?.classList.add('hidden');
-            if (menuText) menuText.textContent = 'Menú';
-        });
+  // Close menu when clicking on any link
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+      if (menuText) menuText.textContent = "Menú";
     });
+  });
 </script>
