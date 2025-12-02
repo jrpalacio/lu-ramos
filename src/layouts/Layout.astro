@@ -1,30 +1,29 @@
 ---
 import "../styles/global.css";
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 ---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-		<footer class="max-w-6xl m-auto">
-			<p>&copy; 2025 - jrpalacio</p>
-		</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <div class="p-12"></div>
+  </body>
 </html>
 
 <style>
-	body {
-		margin: 0;
-		font-family: system-ui, sans-serif;
-		background-color: #161a19;
-		color: #ffffff;
-	}
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #161a19;
+    color: #ffffff;
+  }
 </style>
