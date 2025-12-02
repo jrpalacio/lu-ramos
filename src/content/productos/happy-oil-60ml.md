@@ -25,9 +25,24 @@ precio_distribuidor:
     precio: 138
 
 category: tópicos
-tags: ["dolor", "inflamación", "golpes", "artritis", "muscular", "calmante", "regenerador"]
+tags:
+  [
+    "dolor",
+    "inflamación",
+    "golpes",
+    "artritis",
+    "muscular",
+    "calmante",
+    "regenerador",
+  ]
 
 description: "Aceite de uso tópico con árnica, caléndula, arrayán, mentol y cannabidiol. Alivio natural para el dolor e inflamación."
+
+beneficios:
+  - Alivio rápido en zonas inflamadas o doloridas
+  - Ideal para masajes terapéuticos y relajantes
+  - Auxiliar en casos de artritis, torceduras y moretones
+  - Ayuda a regenerar la piel y calmar la irritación
 ---
 
 ## 💆‍♀️ Alivio inmediato donde más lo necesitas
@@ -37,9 +52,9 @@ Gracias a su poderosa mezcla de árnica, caléndula, arrayán y CBD + CBDA, este
 
 ## ✨ Beneficios que sentirás
 
-- Alivio rápido en zonas inflamadas o doloridas  
-- Ideal para masajes terapéuticos y relajantes  
-- Auxiliar en casos de artritis, torceduras y moretones  
+- Alivio rápido en zonas inflamadas o doloridas
+- Ideal para masajes terapéuticos y relajantes
+- Auxiliar en casos de artritis, torceduras y moretones
 - Ayuda a regenerar la piel y calmar la irritación
 
 ## 🧴 ¿Cómo se usa?

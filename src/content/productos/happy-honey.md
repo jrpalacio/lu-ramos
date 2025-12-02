@@ -23,9 +23,26 @@ precio_distribuidor:
     precio: 579
 
 category: aceites
-tags: ["dolor", "ansiedad", "cardiovascular", "estrés", "sueño", "epilepsia", "obesidad", "metabolismo"]
+tags:
+  [
+    "dolor",
+    "ansiedad",
+    "cardiovascular",
+    "estrés",
+    "sueño",
+    "epilepsia",
+    "obesidad",
+    "metabolismo",
+  ]
 
 description: "CBD de espectro completo con miel de abeja, ideal para quienes buscan una opción natural con un toque dulce. 3000 mg de CBD en 20 ml."
+
+beneficios:
+  - Ayuda a disminuir el dolor crónico y el estrés
+  - Mejora la calidad del sueño
+  - Apoya la regulación del metabolismo y niveles de azúcar
+  - Alivia la ansiedad de forma natural
+  - Auxiliar en casos de epilepsia y trastornos del ánimo
 ---
 
 ## 🍯 Tu dosis de calma... con un toque dulce
@@ -37,10 +54,10 @@ Perfecto para quienes desean relajarse y mejorar su salud con un sabor natural y
 
 ## ✨ Beneficios que sentirás
 
-- Ayuda a disminuir el dolor crónico y el estrés  
-- Mejora la calidad del sueño  
-- Apoya la regulación del metabolismo y niveles de azúcar  
-- Alivia la ansiedad de forma natural  
+- Ayuda a disminuir el dolor crónico y el estrés
+- Mejora la calidad del sueño
+- Apoya la regulación del metabolismo y niveles de azúcar
+- Alivia la ansiedad de forma natural
 - Auxiliar en casos de epilepsia y trastornos del ánimo
 
 ## 🧴 ¿Cómo se usa?

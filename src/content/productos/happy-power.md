@@ -24,9 +24,29 @@ precio_distribuidor:
     precio: 579
 
 category: adaptógenos
-tags: ["energía", "vitalidad", "sueño", "vitalidad", "metabolismo", "estrés", "ansiedad", "obesidad", "diabetes"]
+tags:
+  [
+    "energía",
+    "vitalidad",
+    "sueño",
+    "vitalidad",
+    "metabolismo",
+    "estrés",
+    "ansiedad",
+    "obesidad",
+    "diabetes",
+  ]
 
 description: "Este suplemento está diseñado para aumentar la energía y la vitalidad de manera natural. Ayuda a reducir el estrés y la ansiedad, al mismo tiempo que refuerza el sistema inmunológico. Su fórmula también contribuye a mejorar la concentración y el enfoque mental, apoyando el equilibrio hormonal y promoviendo un estado general de bienestar."
+
+beneficios:
+  - Energía y vitalidad de forma natural
+  - Reducción de la ansiedad y el estrés
+  - Mejora el sistema inmunológico
+  - Estabilización del metabolismo y control de peso
+  - Apoyo en casos de epilepsia y trastornos neurológicos
+  - Contribuye a mejorar la concentración y el enfoque mental
+  - Apoya al equilibrio hormonal
 ---
 
 ## 🌿 Tu bienestar empieza con una capsula
@@ -39,11 +59,11 @@ Porque cuando tu cuerpo está en equilibrio… todo empieza a fluir.
 
 ## ✨ Beneficios que sentirás
 
-- Energía y vitalidad de forma natural  
-- Reducción de la ansiedad y el estrés  
-- Mejora el sistema inmunológico 
-- Estabilización del metabolismo y control de peso  
-- Apoyo en casos de epilepsia y trastornos neurológicos  
+- Energía y vitalidad de forma natural
+- Reducción de la ansiedad y el estrés
+- Mejora el sistema inmunológico
+- Estabilización del metabolismo y control de peso
+- Apoyo en casos de epilepsia y trastornos neurológicos
 - Contribuye a mejorar la concentración y el enfoque mental
 - Apoya al equilibrio hormonal
 

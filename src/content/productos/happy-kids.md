@@ -26,6 +26,12 @@ category: aceites
 tags: ["ansiedad", "estrés", "epilepsia", "sueño", "TEA", "TDAH", "infantil"]
 
 description: "CBD aislado con sabor a moras, ideal para apoyar el equilibrio emocional, el sueño y la concentración en niños."
+
+beneficios:
+  - Reduce ansiedad, agresividad y estrés
+  - Mejora la calidad del sueño
+  - Favorece la concentración y el enfoque
+  - Auxiliar en casos de TDAH, TEA y epilepsia
 ---
 
 ## 👶 Bienestar emocional para los más pequeños
@@ -37,9 +43,9 @@ Con un sabor a moras que les encanta y una fórmula de CBD aislado segura para e
 
 ## ✨ Beneficios que notarás
 
-- Reduce ansiedad, agresividad y estrés  
-- Mejora la calidad del sueño  
-- Favorece la concentración y el enfoque  
+- Reduce ansiedad, agresividad y estrés
+- Mejora la calidad del sueño
+- Favorece la concentración y el enfoque
 - Auxiliar en casos de TDAH, TEA y epilepsia
 
 ## 🧴 ¿Cómo se usa?

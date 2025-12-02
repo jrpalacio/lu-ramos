@@ -22,23 +22,39 @@ precio_distribuidor:
     precio: 414
 
 category: aceites
-tags: ["mascotas", "ansiedad", "dolor", "convulsiones", "apetito", "artritis", "neurodegenerativas"]
+tags:
+  [
+    "mascotas",
+    "ansiedad",
+    "dolor",
+    "convulsiones",
+    "apetito",
+    "artritis",
+    "neurodegenerativas",
+  ]
 
 description: "Fórmula con CBD de espectro completo especialmente creada para apoyar la salud emocional y física de tu mascota. 500 mg en 20 ml."
+
+beneficios:
+  - Disminuye la ansiedad y el estrés
+  - Apoya en casos de convulsiones
+  - Alivia el dolor y mejora la movilidad
+  - Estimula el apetito
+  - Auxiliar en enfermedades neurodegenerativas
 ---
 
 ## 🐶 Amor y alivio en cada gota
 
-Ellos también sienten ansiedad, dolor o decaimiento.  **Happy Pet** está diseñado para cuidar a tu mascota de forma natural, con ingredientes que le devuelven la vitalidad y el bienestar.
+Ellos también sienten ansiedad, dolor o decaimiento. **Happy Pet** está diseñado para cuidar a tu mascota de forma natural, con ingredientes que le devuelven la vitalidad y el bienestar.
 
 Ideal para perros y gatos que necesitan apoyo físico y emocional.
 
 ## ✨ Beneficios que notarás en tu mascota
 
-- Disminuye la ansiedad y el estrés  
-- Apoya en casos de convulsiones  
-- Alivia el dolor y mejora la movilidad  
-- Estimula el apetito  
+- Disminuye la ansiedad y el estrés
+- Apoya en casos de convulsiones
+- Alivia el dolor y mejora la movilidad
+- Estimula el apetito
 - Auxiliar en enfermedades neurodegenerativas
 
 ## 🧴 ¿Cómo se usa?

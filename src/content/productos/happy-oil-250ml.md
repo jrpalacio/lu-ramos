@@ -25,9 +25,24 @@ precio_distribuidor:
     precio: 441
 
 category: tópicos
-tags: ["masajes", "dolor crónico", "inflamación", "relajante", "articulaciones", "muscular", "recuperación"]
+tags:
+  [
+    "masajes",
+    "dolor crónico",
+    "inflamación",
+    "relajante",
+    "articulaciones",
+    "muscular",
+    "recuperación",
+  ]
 
 description: "Aceite para masajes con CBD + CBDA, árnica, caléndula y arrayán. Ideal para aliviar el dolor muscular e inflamaciones."
+
+beneficios:
+  - Alivio muscular profundo y duradero
+  - Disminuye inflamaciones y molestias crónicas
+  - Ideal para personas con artritis, golpes o contracturas
+  - Perfecto para masajes relajantes o descontracturantes
 ---
 
 ## 💆‍♂️ Tu ritual de alivio diario
@@ -38,9 +53,9 @@ Su fórmula con CBD + CBDA, árnica, caléndula y arrayán calma, desinflama y r
 
 ## ✨ Beneficios que sentirás
 
-- Alivio muscular profundo y duradero  
-- Disminuye inflamaciones y molestias crónicas  
-- Ideal para personas con artritis, golpes o contracturas  
+- Alivio muscular profundo y duradero
+- Disminuye inflamaciones y molestias crónicas
+- Ideal para personas con artritis, golpes o contracturas
 - Perfecto para masajes relajantes o descontracturantes
 
 ## 🧴 ¿Cómo se usa?

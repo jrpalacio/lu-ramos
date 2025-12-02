@@ -28,9 +28,26 @@ precio_distribuidor:
     precio: 348
 
 category: skincare
-tags: ["hidratación", "protección solar", "CBDA", "piel sensible", "antioxidante", "dermatitis", "rosácea", "día"]
+tags:
+  [
+    "hidratación",
+    "protección solar",
+    "CBDA",
+    "piel sensible",
+    "antioxidante",
+    "dermatitis",
+    "rosácea",
+    "día",
+  ]
 
 description: "Crema facial con CBDA, FPS30 y ácido hialurónico. Hidrata, regenera y protege la piel desde la mañana."
+
+beneficios:
+  - Hidrata intensamente sin dejar sensación grasosa
+  - Protege del sol con FPS 30
+  - Regenera y suaviza la piel desde la primera aplicación
+  - Calma irritaciones y reduce rojeces
+  - Auxiliar en casos de psoriasis, rosácea y eczemas
 ---
 
 ## 🌞 Tu piel protegida, hidratada y luminosa todo el día
@@ -41,10 +58,10 @@ Diseñada para pieles sensibles, con tendencia a irritación o afecciones como r
 
 ## ✨ Beneficios que sentirás
 
-- Hidrata intensamente sin dejar sensación grasosa  
-- Protege del sol con FPS 30  
-- Regenera y suaviza la piel desde la primera aplicación  
-- Calma irritaciones y reduce rojeces  
+- Hidrata intensamente sin dejar sensación grasosa
+- Protege del sol con FPS 30
+- Regenera y suaviza la piel desde la primera aplicación
+- Calma irritaciones y reduce rojeces
 - Auxiliar en casos de psoriasis, rosácea y eczemas
 
 ## 🧴 ¿Cómo se usa?

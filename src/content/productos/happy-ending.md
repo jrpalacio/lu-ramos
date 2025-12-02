@@ -30,9 +30,24 @@ precio_distribuidor:
     precio: 138
 
 category: tópicos
-tags: ["placer", "lubricante", "CBD íntimo", "resequedad", "relación sexual", "bienestar íntimo"]
+tags:
+  [
+    "placer",
+    "lubricante",
+    "CBD íntimo",
+    "resequedad",
+    "relación sexual",
+    "bienestar íntimo",
+  ]
 
 description: "Lubricante íntimo comestible con CBD, efecto térmico y sabor a chocolate. Intensifica el placer y cuida tu salud íntima."
+
+beneficios:
+  - Aumenta la sensibilidad y el placer
+  - Disminuye la resequedad vaginal
+  - Protege y calma las zonas íntimas
+  - Relaja los tejidos y reduce la ansiedad sexual
+  - Ayuda a intensificar la conexión y la experiencia
 ---
 
 ## 🔥 Intensifica el placer, cuida tu intimidad
@@ -44,10 +59,10 @@ Combina ingredientes seguros, naturales y un delicioso sabor a chocolate. Ideal 
 
 ## ✨ Beneficios que sentirás
 
-- Aumenta la sensibilidad y el placer  
-- Disminuye la resequedad vaginal  
-- Protege y calma las zonas íntimas  
-- Relaja los tejidos y reduce la ansiedad sexual  
+- Aumenta la sensibilidad y el placer
+- Disminuye la resequedad vaginal
+- Protege y calma las zonas íntimas
+- Relaja los tejidos y reduce la ansiedad sexual
 - Ayuda a intensificar la conexión y la experiencia
 
 ## 🧴 ¿Cómo se usa?

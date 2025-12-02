@@ -22,9 +22,28 @@ precio_distribuidor:
     precio: 579
 
 category: aceites
-tags: ["dolor", "ansiedad", "sueño", "cardiovascular", "metabolismo", "estrés", "epilepsia", "obesidad", "diabetes"]
+tags:
+  [
+    "dolor",
+    "ansiedad",
+    "sueño",
+    "cardiovascular",
+    "metabolismo",
+    "estrés",
+    "epilepsia",
+    "obesidad",
+    "diabetes",
+  ]
 
 description: "Tu mejor aliado para recuperar el equilibrio físico y emocional. CBD de espectro completo con 3000 mg, elaborado con aceite de cártamo de alta pureza."
+
+beneficios:
+  - Alivio del dolor crónico sin químicos agresivos
+  - Reducción de la ansiedad y el estrés
+  - Mejora en la calidad del sueño y el descanso profundo
+  - Estabilización del metabolismo y control de peso
+  - Apoyo en casos de epilepsia y trastornos neurológicos
+  - Regula la presión arterial y mejora la salud cardiovascular
 ---
 
 ## 🌿 Tu bienestar empieza con una gota
@@ -36,11 +55,11 @@ Ideal para quienes buscan una alternativa natural, efectiva y sin efectos psicoa
 
 ## ✨ Beneficios que sentirás
 
-- Alivio del dolor crónico sin químicos agresivos  
-- Reducción de la ansiedad y el estrés  
-- Mejora en la calidad del sueño y el descanso profundo  
-- Estabilización del metabolismo y control de peso  
-- Apoyo en casos de epilepsia y trastornos neurológicos  
+- Alivio del dolor crónico sin químicos agresivos
+- Reducción de la ansiedad y el estrés
+- Mejora en la calidad del sueño y el descanso profundo
+- Estabilización del metabolismo y control de peso
+- Apoyo en casos de epilepsia y trastornos neurológicos
 - Regula la presión arterial y mejora la salud cardiovascular
 
 ## 🧴 ¿Cómo se usa?

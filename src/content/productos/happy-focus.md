@@ -25,9 +25,23 @@ precio_distribuidor:
     precio: 496
 
 category: aceites
-tags: ["concentración", "productividad", "antinflamatorio", "claridad mental", "cbg", "cbd"]
+tags:
+  [
+    "concentración",
+    "productividad",
+    "antinflamatorio",
+    "claridad mental",
+    "cbg",
+    "cbd",
+  ]
 
 description: "Mejora tu enfoque con una mezcla única de CBD + CBG y aceites esenciales. 800 mg de CBD y 400 mg de CBG por frasco."
+
+beneficios:
+  - Mejora la concentración y claridad mental
+  - Aumenta tu productividad diaria
+  - Ayuda en procesos inflamatorios
+  - Posee propiedades regenerativas, antitumorales y antimicrobianas
 ---
 
 ## 🧠 Tu mente clara, tu energía enfocada
@@ -39,9 +53,9 @@ Ideal para quienes quieren más claridad, sin cafeína ni efectos secundarios.
 
 ## ✨ Beneficios que sentirás
 
-- Mejora la concentración y claridad mental  
-- Aumenta tu productividad diaria  
-- Ayuda en procesos inflamatorios  
+- Mejora la concentración y claridad mental
+- Aumenta tu productividad diaria
+- Ayuda en procesos inflamatorios
 - Posee propiedades regenerativas, antitumorales y antimicrobianas
 
 ## 🧴 ¿Cómo se usa?

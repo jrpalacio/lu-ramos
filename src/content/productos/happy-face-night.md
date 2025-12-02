@@ -27,9 +27,26 @@ precio_distribuidor:
     precio: 348
 
 category: skincare
-tags: ["regeneración", "antiedad", "CBDA", "retinol", "acné", "arrugas", "eczema", "noche"]
+tags:
+  [
+    "regeneración",
+    "antiedad",
+    "CBDA",
+    "retinol",
+    "acné",
+    "arrugas",
+    "eczema",
+    "noche",
+  ]
 
 description: "Crema facial de noche con CBDA, retinol y lavanda. Regenera, hidrata y combate el acné, manchas y signos de la edad."
+
+beneficios:
+  - Favorece la renovación celular durante la noche
+  - Reduce líneas finas, manchas y signos de la edad
+  - Ayuda con el acné, eccemas y piel sensible
+  - Hidrata profundamente y mejora la textura de la piel
+  - Relaja gracias a su aroma natural de lavanda
 ---
 
 ## 🌙 Renueva tu piel mientras duermes
@@ -41,10 +58,10 @@ Perfecta para pieles que buscan suavidad, firmeza y luz natural al despertar.
 
 ## ✨ Beneficios que sentirás
 
-- Favorece la renovación celular durante la noche  
-- Reduce líneas finas, manchas y signos de la edad  
-- Ayuda con el acné, eccemas y piel sensible  
-- Hidrata profundamente y mejora la textura de la piel  
+- Favorece la renovación celular durante la noche
+- Reduce líneas finas, manchas y signos de la edad
+- Ayuda con el acné, eccemas y piel sensible
+- Hidrata profundamente y mejora la textura de la piel
 - Relaja gracias a su aroma natural de lavanda
 
 ## 🧴 ¿Cómo se usa?

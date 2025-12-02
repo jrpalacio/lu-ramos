@@ -25,9 +25,23 @@ precio_distribuidor:
     precio: 355
 
 category: gomitas
-tags: ["ansiedad", "estrés", "sueño", "relajación", "neuroprotector", "CBD comestible"]
+tags:
+  [
+    "ansiedad",
+    "estrés",
+    "sueño",
+    "relajación",
+    "neuroprotector",
+    "CBD comestible",
+  ]
 
 description: "Gomitas naturales con CBD, azahar, tila y pasiflora. Relajan, mejoran el sueño y ayudan a reducir el estrés."
+
+beneficios:
+  - Disminuyen el estrés y la ansiedad
+  - Favorecen el descanso y la relajación profunda
+  - Tienen efecto neuroprotector y analgésico
+  - Fáciles de tomar y deliciosas
 ---
 
 ## 🍬 Relájate con sabor a bienestar
@@ -39,9 +53,9 @@ Perfectas para reducir el estrés, relajar la mente y favorecer un sueño profun
 
 ## ✨ Beneficios que sentirás
 
-- Disminuyen el estrés y la ansiedad  
-- Favorecen el descanso y la relajación profunda  
-- Tienen efecto neuroprotector y analgésico  
+- Disminuyen el estrés y la ansiedad
+- Favorecen el descanso y la relajación profunda
+- Tienen efecto neuroprotector y analgésico
 - Fáciles de tomar y deliciosas
 
 ## 🧴 ¿Cómo se usa?

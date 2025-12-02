@@ -28,6 +28,12 @@ category: aceites
 tags: ["sueño", "relajación", "melatonina", "cbn", "neuroprotector", "descanso"]
 
 description: "La fórmula perfecta para descansar profundamente. CBD + CBN + melatonina y lavanda, todo en un frasco de 20 ml."
+
+beneficios:
+  - Induce el sueño de forma natural, sin dependencia
+  - Mejora la calidad y duración del sueño
+  - Relaja el sistema nervioso y disminuye la ansiedad nocturna
+  - Auxiliar en convulsiones y como neuroprotector
 ---
 
 ## 🌙 Duerme mejor, despierta renovado
@@ -37,9 +43,9 @@ Una mezcla efectiva de CBD, CBN, melatonina y lavanda que relaja tu cuerpo y pre
 
 ## ✨ Beneficios que sentirás
 
-- Induce el sueño de forma natural, sin dependencia  
-- Mejora la calidad y duración del sueño  
-- Relaja el sistema nervioso y disminuye la ansiedad nocturna  
+- Induce el sueño de forma natural, sin dependencia
+- Mejora la calidad y duración del sueño
+- Relaja el sistema nervioso y disminuye la ansiedad nocturna
 - Auxiliar en convulsiones y como neuroprotector
 
 ## 🧴 ¿Cómo se usa?
