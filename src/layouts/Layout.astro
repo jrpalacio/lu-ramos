@@ -1,21 +1,74 @@
 ---
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
-
+import { ClientRouter } from 'astro:transitions';
 const siteUrl = "https://lu-ramos.vercel.app/";
 const description =
   "Vive con más energía, calma y bienestar. Yo te muestro cómo.";
+const autor = "Lucy Ramos";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
-  </head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{autor}</title>
+		<ClientRouter />
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	  
+		<!-- Favicon e íconos -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	  
+		<!-- SEO -->
+		<meta name="description" content={description} />
+		<meta name="keywords" content="CBD, USOS, BENEFICIOS, DOSIFICACIÓN, HAPPY LIVE, HAPPY DOCS, ALIMENTOS NUTRACEUTICOS, ACEITES, GOMITAS, BIENESTAR" />
+		<meta name="author" content={autor} />
+		<meta name="robots" content="index, follow" />
+		<meta name="generator" content="Astro" />
+		<meta name="theme-color" content="#161a19" />
+
+		<!-- Canonical 
+		<link rel="canonical" href={siteUrl} />-->
+	  
+		<!-- Open Graph -->
+		<meta property="og:title" content={autor} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={siteUrl} />
+		<meta property="og:image" content={siteUrl + '/og-image.png'} />
+		<meta property="og:image:width" content="200" />
+		<meta property="og:image:height" content="200" />
+		<meta property="og:image:alt" content={autor} />
+		<meta property="og:image:type" content="image/png" />
+	  
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={autor} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={siteUrl + '/og-image.png'} />
+		<meta name="twitter:creator" content="@caballero_ux" />
+
+		<script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {title},
+        "url": {siteUrl},
+        "author": {
+        "@type": "Person",
+        "name": "Lucy Ramos"
+        },
+        "description": {description}
+      }
+		</script>
+			
+	</head>	
   <body>
     <Navbar />
     <slot />
