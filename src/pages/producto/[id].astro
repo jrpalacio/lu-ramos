@@ -3,7 +3,6 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import ArrowLeft from '../../assets/svg/arrowl.svg';
-import Section from '../../components/Section.astro';
 import { testimonios } from '../../data/testimonios';
 import Testimonials from '../../components/Testimonials.astro';
 import { shoppingCartUrl } from '../../config.js';
@@ -19,8 +18,6 @@ export async function getStaticPaths() {
 const { producto } = Astro.props;
 const { data } = producto;
 const { precio_publico, img, nombre, description, ingredientes } = data;
-
-const { Content } = await render(producto);
 
 const testimonio = testimonios.filter(testimonials => testimonials.producto.toLowerCase() === nombre.toLowerCase());
 --- 
@@ -81,19 +78,18 @@ const testimonio = testimonios.filter(testimonials => testimonials.producto.toLo
           ))}
         </ul>
     </article>
-      { 
-        testimonio.length >= 1 && (  
-        <h2 class="text-2xl font-bold text-gray-100 mt-12 mb-6"> 💬 Lo que dicen quienes lo prueban </h2>
-          <div class="flex items-center overflow-x-scroll gap-4 py-4 px-2 sm:px-4 scrollbar-thin scrollbar-thumb-happy-pink scrollbar-track-gray-700/50 rounded">
-            {testimonio.map((testimonio) => {
-              return (
-                <Testimonials testimonio={testimonio} />
-              )
-            })}
-          </div>
-        )
-      }
-    
+    { 
+      testimonio.length >= 1 && (  
+      <h2 class="text-2xl font-bold text-gray-100 mt-12 mb-6"> 💬 Lo que dicen quienes lo prueban </h2>
+        <div class="flex items-center overflow-x-scroll gap-4 py-4 px-2 sm:px-4 scrollbar-thin scrollbar-thumb-happy-pink scrollbar-track-gray-700/50 rounded">
+          {testimonio.map((testimonio) => {
+            return (
+              <Testimonials testimonio={testimonio} />
+            )
+          })}
+        </div>
+      )
+    }
   </section>
 </Layout>
 

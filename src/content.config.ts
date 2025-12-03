@@ -9,7 +9,7 @@ const products = defineCollection({
   loader: glob({
     pattern: "**/*.md",
     base: "./src/content/productos",
-  }), 
+  }),
 
   schema: z.object({
     nombre: z.string(),
@@ -28,7 +28,7 @@ const products = defineCollection({
     category: z.string(),
     tags: z.array(z.string()),
     description: z.string(),
-    beneficios: z.array(z.string()).optional(),
+    beneficios: z.array(z.string()),
 
     // NUEVOS CAMPOS OPCIONALES
     modo_de_uso: z.string().optional(),
